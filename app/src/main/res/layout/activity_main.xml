@@ -36,6 +36,7 @@
         android:textColor="#0c2a31"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:onClick="onBeginButtonClick"
         />
 
     <Button
@@ -48,19 +49,10 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:backgroundTint="#748d69"
+        android:onClick="onInstructionClick"
         />
 
-    <Button
-        android:id="@+id/exitmain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25sp"
-        android:text="Exit"
-        android:textColor="#0c2a31"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:backgroundTint="#748d69"
-        />
+
 
 </LinearLayout>
 
