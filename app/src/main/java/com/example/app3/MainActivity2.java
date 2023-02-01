@@ -25,4 +25,8 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
     }
+
+    public void test(View view){
+        System.out.println("hello");
+    }
 }
