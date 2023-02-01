@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3"
+    tools:context=".MainActivity4"
     android:background="#748d69">
 
     <TextView
@@ -31,8 +31,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/backToGame"
-            android:text="Back to Game"
+            android:id="@+id/backToGames"
+            android:text="Start Game"
             android:textColor="#0c2a31"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -42,7 +42,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/backHome"
+            android:id="@+id/backToHome"
             android:text="Back to Homepage"
             android:textColor="#0c2a31"
             android:textSize="20sp"
