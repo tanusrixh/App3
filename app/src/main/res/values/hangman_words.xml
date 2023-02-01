@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="words">
+        <item>HELLO</item>
+        <item>DEADLINE</item>
+        <item>TABLET</item>
+        <item>STARE</item>
+        <item>MONITOR</item>
+        <item>HEADPHONE</item>
+        <item>CAT</item>
+        <item>ANIMAL</item>
+        <item>DEVELOP</item>
+        <item>APPLICATION</item>
+        <item>PLANET</item>
+        <item>FOOD</item>
+        <item>CLOWN</item>
+        <item>SOFTWARE</item>
+    </string-array>
+</resources>

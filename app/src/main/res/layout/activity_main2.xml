@@ -11,9 +11,9 @@
         android:id="@+id/welcomeToGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Great! First of all, what is your name?"
+        android:text="Hangman"
         android:layout_centerInParent="true"
-        android:textStyle="italic|bold"
+        android:textStyle="bold"
         android:textColor="#0c2a31"
         android:textSize="35sp"
         android:textAlignment="center"
@@ -35,20 +35,80 @@
         android:layout_marginBottom="25sp"
         />
 
-    <EditText
-        android:id="@+id/editName"
+
+
+    <RelativeLayout
+        android:id="@+id/all"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeToGame"
+        android:layout_centerHorizontal="true">
 
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="50sp"
-        android:textSize="25dp"
-        android:ems="10"
-        android:hint="Enter Your Name"
-        android:inputType="textPersonName"
-        android:visibility="visible"
-        android:textColor="@color/white"
-        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/stand"
+            android:paddingTop="0dp"
+            android:src="@drawable/stand" />
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/head"
+            android:paddingTop="0dp"
+            android:src="@drawable/head" />
+
+    <ImageView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/body"
+        android:paddingTop="0dp"
+        android:src="@drawable/body" />
+    <ImageView
+        android:id="@+id/armr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/armr"
+        android:paddingTop="0dp"
+        android:src="@drawable/armr" />
+    <ImageView
+        android:id="@+id/arml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/arml"
+        android:paddingTop="0dp"
+        android:src="@drawable/arml" />
+        <ImageView
+            android:id="@+id/legr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/legr"
+            android:paddingTop="0dp"
+            android:src="@drawable/legr" />
+        <ImageView
+            android:id="@+id/legl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/legl"
+            android:paddingTop="0dp"
+            android:src="@drawable/legl" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/answerDisp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20sp"
+        android:layout_below="@id/all"
+        android:layout_marginHorizontal="20sp">
+    </LinearLayout>
+
 
 </RelativeLayout>

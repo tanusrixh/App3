@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">App3</string>
+    <string name="stand">App3</string>
+    <string name="head">App3</string>
+    <string name="body">App3</string>
+    <string name="arml">App3</string>
+    <string name="armr">App3</string>
+    <string name="legl">App3</string>
+    <string name="legr">App3</string>
+
 </resources>
