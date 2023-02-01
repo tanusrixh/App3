@@ -36,7 +36,6 @@
         android:textColor="#0c2a31"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:onClick="onBeginButtonClick"
         />
 
     <Button
@@ -49,7 +48,6 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:backgroundTint="#748d69"
-        android:onClick="onInstructionClick"
         />
 
 

@@ -4,6 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".MainActivity3"
+    android:background="#a4c098">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backHome"
+        android:text="Back to Homepage"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0c2a31"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="#748d69"
+        android:layout_marginBottom="25sp"
+        />
 
 </RelativeLayout>
