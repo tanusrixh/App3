@@ -27,17 +27,17 @@ public class MainActivity2 extends AppCompatActivity {
     Button instructions;
 
     //body part images
-    private ImageView[] bodyParts;
-    private int numParts=6;
-    private int currPart;
+    private ImageView[] strikes;
+    private int guesses=6;
+    private int currentBP;
     private int numChars;
     private int numCorr;
 
     private String[] words;
-    private Random rand;
-    private String currWord;
+    private Random randomWord;
+    private String currentWord;
     private LinearLayout wordLayout;
-    private TextView[] charViews;
+    private TextView[] seeLetter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +45,8 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Resources res = getResources();
         words = res.getStringArray(R.array.words);
-        rand = new Random();
-        currWord ="";
+        randomWord = new Random();
+        currentWord ="";
         wordLayout = findViewById(R.id.answerDisp);
         instructions = findViewById(R.id.refresher);
 
@@ -58,19 +58,19 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
-        bodyParts = new ImageView[numParts];
+        strikes = new ImageView[guesses];
     }
 
     private void test(View view){
-        String newWord = words[rand.nextInt(words.length)];
-        while(newWord.equals(currWord)) newWord = words[rand.nextInt(words.length)];
-        currWord = newWord;
-        charViews = new TextView[currWord.length()];
+        String newWord = words[randomWord.nextInt(words.length)];
+        while(newWord.equals(currentWord)) newWord = words[randomWord.nextInt(words.length)];
+        currentWord = newWord;
+        seeLetter = new TextView[currentWord.length()];
         wordLayout.removeAllViews();
 
-        for (int c = 0; c < currWord.length(); c++) {
-            charViews[c] = new TextView(this);
-            charViews[c].setText(""+currWord.charAt(c));
+        for (int i = 0; i < currentWord.length(); i++) {
+            seeLetter[i] = new TextView(this);
+            seeLetter[i].setText(currentWord.charAt(i));
         }
 
 
